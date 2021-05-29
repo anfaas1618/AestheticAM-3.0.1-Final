@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7151fb425f90766654708e0e9b696ad2/transformed/jetified-pinpad-1.0.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7151fb425f90766654708e0e9b696ad2/transformed/jetified-pinpad-1.0.4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7151fb425f90766654708e0e9b696ad2/transformed/jetified-pinpad-1.0.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba168b154212b8d73a5be54b9a005087/transformed/jetified-pinpad-1.0.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ba168b154212b8d73a5be54b9a005087/transformed/jetified-pinpad-1.0.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba168b154212b8d73a5be54b9a005087/transformed/jetified-pinpad-1.0.4/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

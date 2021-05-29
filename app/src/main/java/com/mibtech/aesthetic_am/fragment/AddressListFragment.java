@@ -70,7 +70,7 @@ public class AddressListFragment extends Fragment {
 
         root = inflater.inflate(R.layout.fragment_address_list, container, false);
         activity = getActivity();
-        session = new Session(activity);
+        session  = new Session(activity);
 
         recyclerView = root.findViewById(R.id.recyclerView);
         swipeLayout = root.findViewById(R.id.swipeLayout);
@@ -164,6 +164,10 @@ public class AddressListFragment extends Fragment {
                             JSONObject object = objectbject.getJSONObject(Constant.SETTINGS);
                             Constant.SETTING_MINIMUM_AMOUNT_FOR_FREE_DELIVERY = Double.parseDouble(object.getString(Constant.MINIMUM_AMOUNT));
                             Constant.SETTING_DELIVERY_CHARGE = Double.parseDouble(object.getString(Constant.DELIEVERY_CHARGE));
+                            //todo quick fix
+
+                            //todo quick fix
+
                         }
                     } catch (JSONException e) {
 

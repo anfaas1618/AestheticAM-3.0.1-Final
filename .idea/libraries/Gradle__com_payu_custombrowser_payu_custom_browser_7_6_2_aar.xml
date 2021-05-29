@@ -2,11 +2,15 @@
   <library name="Gradle: com.payu.custombrowser:payu-custom-browser:7.6.2@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fc8b1feff57dd820652a1c7cce9681dc/transformed/jetified-payu-custom-browser-7.6.2/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e470c696e7b3b39f0028d6349ac22ff2/transformed/jetified-payu-custom-browser-7.6.2/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fc8b1feff57dd820652a1c7cce9681dc/transformed/jetified-payu-custom-browser-7.6.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc8b1feff57dd820652a1c7cce9681dc/transformed/jetified-payu-custom-browser-7.6.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc8b1feff57dd820652a1c7cce9681dc/transformed/jetified-payu-custom-browser-7.6.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e470c696e7b3b39f0028d6349ac22ff2/transformed/jetified-payu-custom-browser-7.6.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e470c696e7b3b39f0028d6349ac22ff2/transformed/jetified-payu-custom-browser-7.6.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e470c696e7b3b39f0028d6349ac22ff2/transformed/jetified-payu-custom-browser-7.6.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payu.custombrowser/payu-custom-browser/7.6.2/1c0edb2b7b49bce813ce6cce5646d4464e92d445/payu-custom-browser-7.6.2-javadoc.jar!/" />

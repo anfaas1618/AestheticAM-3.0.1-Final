@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b029d0b5ff63b7240c96e0505ec69936/transformed/jetified-plug-n-play-1.6.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b029d0b5ff63b7240c96e0505ec69936/transformed/jetified-plug-n-play-1.6.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b029d0b5ff63b7240c96e0505ec69936/transformed/jetified-plug-n-play-1.6.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45562eeb61697e614991daf028b23ad2/transformed/jetified-plug-n-play-1.6.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/45562eeb61697e614991daf028b23ad2/transformed/jetified-plug-n-play-1.6.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/45562eeb61697e614991daf028b23ad2/transformed/jetified-plug-n-play-1.6.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.sdkui/plug-n-play/1.6.1/c08a59f964ee9eecfd676af1ec2f3760a8b9e11a/plug-n-play-1.6.1-javadoc.jar!/" />

@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3110cc8218d0a2971994dc9a1b33a02c/transformed/jetified-pgplussdk-1.4.4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3110cc8218d0a2971994dc9a1b33a02c/transformed/jetified-pgplussdk-1.4.4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3110cc8218d0a2971994dc9a1b33a02c/transformed/jetified-pgplussdk-1.4.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/528d1bfc2ce95fa0a24cff170be5ba10/transformed/jetified-pgplussdk-1.4.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/528d1bfc2ce95fa0a24cff170be5ba10/transformed/jetified-pgplussdk-1.4.4/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/528d1bfc2ce95fa0a24cff170be5ba10/transformed/jetified-pgplussdk-1.4.4/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paytm/pgplussdk/1.4.4/54fcb682196d26539aab6a136aa825d1d0d12e7c/pgplussdk-1.4.4-javadoc.jar!/" />

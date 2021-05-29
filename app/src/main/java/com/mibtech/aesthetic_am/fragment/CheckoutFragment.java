@@ -44,6 +44,7 @@ import com.mibtech.aesthetic_am.helper.VolleyCallback;
 import com.mibtech.aesthetic_am.model.Cart;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
+import static com.mibtech.aesthetic_am.fragment.AddressListFragment.GetDChargeSettings;
 
 public class CheckoutFragment extends Fragment {
     public static String pCode = "", appliedCode = "", deliveryCharge = "0";
@@ -107,8 +108,10 @@ public class CheckoutFragment extends Fragment {
                     Fragment fragment = new PaymentFragment();
                     Bundle bundle = new Bundle();
                     if (subtotal > Constant.SETTING_MINIMUM_AMOUNT_FOR_FREE_DELIVERY) {
-                        Constant.SETTING_DELIVERY_CHARGE = 0.0;
                     }
+                    else
+                        Constant.SETTING_DELIVERY_CHARGE = 0.0;
+
                     bundle.putDouble("subtotal", Double.parseDouble("" + subtotal));
                     bundle.putDouble("total", Double.parseDouble("" + Constant.FLOAT_TOTAL_AMOUNT));
                     bundle.putDouble("pCodeDiscount", Double.parseDouble("" + pCodeDiscount));
@@ -243,15 +246,18 @@ public class CheckoutFragment extends Fragment {
             }
 
             subtotal = Constant.FLOAT_TOTAL_AMOUNT;
+            GetDChargeSettings(getActivity());
             tvTotalBeforeTax.setText(session.getData(Constant.currency) + ApiConfig.StringFormat("" + Constant.FLOAT_TOTAL_AMOUNT));
             if (Constant.FLOAT_TOTAL_AMOUNT <= Constant.SETTING_MINIMUM_AMOUNT_FOR_FREE_DELIVERY) {
                 tvDeliveryCharge.setText(session.getData(Constant.currency) + Constant.SETTING_DELIVERY_CHARGE);
                 subtotal = (subtotal + Constant.SETTING_DELIVERY_CHARGE);
                 deliveryCharge = "" + Constant.SETTING_DELIVERY_CHARGE;
             } else {
-                tvDeliveryCharge.setText(getResources().getString(R.string.free));
+                     tvDeliveryCharge.setText(getResources().getString(R.string.free));
                 deliveryCharge = "0";
+
             }
+            //todo quick fix
             dCharge = tvDeliveryCharge.getText().toString().equals(getString(R.string.free)) ? 0.0 : Constant.SETTING_DELIVERY_CHARGE;
             if (!pCode.isEmpty()) {
                 subtotal = subtotal - pCodeDiscount;

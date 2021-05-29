@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/58ff84fe9286f68eab01381b8efef7a0/transformed/jetified-rave-android-1.0.49.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58ff84fe9286f68eab01381b8efef7a0/transformed/jetified-rave-android-1.0.49.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58ff84fe9286f68eab01381b8efef7a0/transformed/jetified-rave-android-1.0.49.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/400bc3fccc02bf041731edd5ddcce8cf/transformed/jetified-rave-android-1.0.49.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/400bc3fccc02bf041731edd5ddcce8cf/transformed/jetified-rave-android-1.0.49.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/400bc3fccc02bf041731edd5ddcce8cf/transformed/jetified-rave-android-1.0.49.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

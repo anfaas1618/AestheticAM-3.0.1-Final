@@ -64,6 +64,7 @@ import com.mibtech.aesthetic_am.helper.Utils;
 import com.mibtech.aesthetic_am.helper.VolleyCallback;
 import com.mibtech.aesthetic_am.ui.PinView;
 
+import static com.mibtech.aesthetic_am.fragment.AddressListFragment.GetDChargeSettings;
 import static com.paytm.pgsdk.easypay.manager.PaytmAssist.getContext;
 
 public class LoginActivity extends AppCompatActivity {
@@ -648,11 +649,13 @@ public class LoginActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             intent.putExtra(Constant.FROM, "");
             if (from != null && from.equals("checkout")) {
+
+                GetDChargeSettings(LoginActivity.this);
                 intent.putExtra("total", ApiConfig.StringFormat("" + Constant.FLOAT_TOTAL_AMOUNT));
                 intent.putExtra(Constant.FROM, "checkout");
-            } else if (from != null && from.equals("tracker")) {
+           } else if (from != null && from.equals("tracker")) {
                 intent.putExtra(Constant.FROM, "tracker");
-            }
+           }
             startActivity(intent);
 
             finish();
