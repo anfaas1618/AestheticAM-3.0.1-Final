@@ -108,9 +108,10 @@ public class CheckoutFragment extends Fragment {
                     Fragment fragment = new PaymentFragment();
                     Bundle bundle = new Bundle();
                     if (subtotal > Constant.SETTING_MINIMUM_AMOUNT_FOR_FREE_DELIVERY) {
-                    }
-                    else
                         Constant.SETTING_DELIVERY_CHARGE = 0.0;
+                    }
+
+
 
                     bundle.putDouble("subtotal", Double.parseDouble("" + subtotal));
                     bundle.putDouble("total", Double.parseDouble("" + Constant.FLOAT_TOTAL_AMOUNT));
