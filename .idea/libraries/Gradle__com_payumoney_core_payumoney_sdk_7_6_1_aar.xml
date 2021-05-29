@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.payumoney.core:payumoney-sdk:7.6.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/55036b2970c70eeff793ddf0979d1cc2/transformed/jetified-payumoney-sdk-7.6.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55036b2970c70eeff793ddf0979d1cc2/transformed/jetified-payumoney-sdk-7.6.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55036b2970c70eeff793ddf0979d1cc2/transformed/jetified-payumoney-sdk-7.6.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.core/payumoney-sdk/7.6.1/17864546892ae3119fe7d44c3c70484f9835bb61/payumoney-sdk-7.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.payumoney.core/payumoney-sdk/7.6.1/65fb5bd015250bd10bd214b535e66f67a3405a2/payumoney-sdk-7.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

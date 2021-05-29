@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:paddingStart="@dimen/_5sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingBottom="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/tvQue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQue"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/_12ssp" />
+
+</RelativeLayout>

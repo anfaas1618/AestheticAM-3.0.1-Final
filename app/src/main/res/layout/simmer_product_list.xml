@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardElevation="7dp"
+    card_view:cardPreventCornerOverlap="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp"
+    android:layout_weight="1"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0.0px"
+    android:elevation="8dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/lytImgThumb"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_below="@+id/txtstatus">
+
+            <View
+                android:id="@+id/imgThumb"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="10dp"
+                android:background="@color/background" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtstatus"
+            android:layout_toEndOf="@+id/lytImgThumb">
+
+            <RelativeLayout
+                android:id="@+id/priceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/tvHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dimen_5dp">
+
+                    <View
+                        android:id="@+id/productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_toStartOf="@+id/imgFav"
+                        android:background="@color/background" />
+
+                    <ImageView
+                        android:id="@+id/imgFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        app:srcCompat="@drawable/ic_is_favorite"
+                        app:tint="@color/background" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvHeading"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:id="@+id/lytprice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="9"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/txtmeasurement"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_15sdp"
+                            android:background="@color/background" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_15sdp"
+                                android:background="@color/background" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytPrice"
+            android:layout_toEndOf="@+id/lytImgThumb"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/lytSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@color/background">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/qtyLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <View
+                    android:id="@+id/btnminusqty"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentStart="true"
+                    android:background="@color/background"
+                    android:padding="5dp" />
+
+                <View
+                    android:id="@+id/txtqty"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/background"
+                    android:paddingStart="@dimen/dimen_5dp"
+                    android:paddingEnd="@dimen/dimen_5dp" />
+
+                <View
+                    android:id="@+id/btnaddqty"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/background"
+                    android:padding="5dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

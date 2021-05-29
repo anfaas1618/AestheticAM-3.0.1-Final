@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/_25sdp"
+        android:height="@dimen/_25sdp"
+        android:drawable="@drawable/bg_menu" />
+    <item
+        android:width="@dimen/_20sdp"
+        android:height="@dimen/_20sdp"
+        android:drawable="@drawable/ic_search"
+        android:start="4dp"
+        android:top="4dp" />
+</layer-list>

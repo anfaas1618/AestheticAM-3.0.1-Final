@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/dimen_10dp">
+
+    <View
+        android:id="@+id/tv1ItemName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@color/background" />
+
+    <View
+        android:id="@+id/tv1Qty"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/tv1ItemName"
+        android:background="@color/background" />
+
+    <View
+        android:id="@+id/tv1Price"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/tv1ItemName"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_toEndOf="@id/tv1Qty"
+        android:background="@color/background" />
+
+    <View
+        android:id="@+id/tv1TaxTitle"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/tv1Price"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/background" />
+
+    <View
+        android:id="@+id/tv1SubTotal"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/tv1Price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/background" />
+
+</RelativeLayout>

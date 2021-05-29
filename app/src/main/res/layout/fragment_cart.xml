@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lytTotal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartrecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/lytTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/card_shadow"
+        android:padding="@dimen/dimen_10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txttotalamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tvConfirmOrder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/txt_color" />
+
+        <TextView
+            android:id="@+id/txttotalitems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txttotalamount"
+            android:layout_toStartOf="@id/tvConfirmOrder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/gray" />
+
+
+        <TextView
+            android:id="@+id/tvConfirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/confirm_bg"
+            android:gravity="center"
+            android:padding="@dimen/dimen_12dp"
+            android:text="@string/btn_continue"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lytempty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_emptycart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noitem_incart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/noitem_incart_msg" />
+
+        <Button
+            android:id="@+id/btnShowNow"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="false"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/shop_now"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/mShimmerViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:shimmer_duration="1200">
+
+        <!-- Adding rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/simmer_cart_list" />
+
+            <include layout="@layout/simmer_cart_list" />
+
+            <include layout="@layout/simmer_cart_list" />
+
+            <include layout="@layout/simmer_cart_list" />
+
+            <include layout="@layout/simmer_cart_list" />
+
+            <include layout="@layout/simmer_cart_list" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

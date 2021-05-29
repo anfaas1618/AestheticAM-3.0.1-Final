@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_menu_cart"
+        android:title="@string/cart" />
+
+    <item
+        android:id="@+id/menu_notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/notifications"
+        app:actionLayout="@layout/menu_counter_layout" />
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_tracker"
+            android:icon="@drawable/ic_menu_tracker"
+            android:title="@string/your_orders" />
+        <item
+            android:id="@+id/menu_wallet_history"
+            android:icon="@drawable/ic_wallet"
+            android:title="@string/wallet_history"
+            app:actionLayout="@layout/menu_counter_layout" />
+        <item
+            android:id="@+id/menu_transaction_history"
+            android:icon="@drawable/ic_transaction_history"
+            android:title="@string/transaction_history"
+            app:actionLayout="@layout/menu_counter_layout" />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/menu_change_pass"
+            android:icon="@drawable/ic_pass"
+            android:title="@string/change_pass" />
+
+        <item
+            android:id="@+id/menu_manage_address"
+            android:icon="@drawable/ic_manage_address"
+            android:title="@string/manage_addresses" />
+
+        <item
+            android:id="@+id/menu_refer"
+            android:icon="@drawable/ic_add_person"
+            android:title="@string/refere" />
+    </group>
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_contact"
+            android:icon="@drawable/ic_contact1"
+            android:title="@string/contact" />
+        <item
+            android:id="@+id/menu_about_us"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/menu_rate"
+            android:icon="@drawable/ic_rate"
+            android:title="@string/rate" />
+        <item
+            android:id="@+id/menu_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/sharapp" />
+
+    </group>
+
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/menu_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="@string/faq" />
+        <item
+            android:id="@+id/menu_terms"
+            android:icon="@drawable/ic_terms"
+            android:title="@string/terms_conditions" />
+        <item
+            android:id="@+id/menu_privacy"
+            android:icon="@drawable/ic_privacy"
+            android:title="@string/privacy_policy" />
+
+    </group>
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+
+</menu>

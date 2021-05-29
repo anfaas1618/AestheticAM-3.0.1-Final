@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/dimen_10dp">
+
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/lytImgThumb"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txtstatus">
+
+        <ImageView
+            android:id="@+id/imgThumb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo_login" />
+
+        <ImageView
+            android:id="@+id/imgIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/lytDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_offer" />
+
+
+            <TextView
+                android:id="@+id/showDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showDiscount"
+                android:layout_centerHorizontal="true"
+                android:text="@string/off"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_6ssp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgFav"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_is_not_favorite" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            app:lottie_autoPlay="false"
+            app:lottie_fileName="add_to_wish_list.json"
+            app:lottie_loop="false" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytImgThumb">
+
+        <RelativeLayout
+            android:id="@+id/priceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/dimen_5dp">
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHeading"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/lytprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/txtoriginalprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:id="@+id/txtmeasurement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:lines="1"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/dimen_5dp"
+                            android:layout_weight="5"
+                            android:background="@drawable/bg_border"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <LinearLayout
+                            android:id="@+id/qtyLyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:weightSum="3">
+
+                            <ImageButton
+                                android:id="@+id/btnminusqty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:paddingBottom="@dimen/dimen_5dp"
+                                app:srcCompat="@drawable/ic_remove" />
+
+                            <TextView
+                                android:id="@+id/txtqty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:paddingBottom="@dimen/dimen_5dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp"
+                                android:textStyle="bold" />
+
+                            <ImageButton
+                                android:id="@+id/btnaddqty"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:paddingTop="@dimen/dimen_5dp"
+                                android:paddingBottom="@dimen/dimen_5dp"
+                                app:srcCompat="@drawable/ic_add" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

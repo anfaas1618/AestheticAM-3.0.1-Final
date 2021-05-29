@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <LinearLayout
+        android:id="@+id/lytSearchview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:background="@drawable/card_shadow"
+        android:padding="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/transparent"
+            android:imeOptions="actionSearch"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/_5sdp"
+            android:hint="@string/search_by_product_name"
+            android:inputType="text"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lytSearchview" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lytSearchview"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/noResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/msg_no_result"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noResult"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:text="@string/msg_search_again"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/custom_progress_dialog"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "438768560704",
+    "project_id": "aesthetic-am-8e410",
+    "storage_bucket": "aesthetic-am-8e410.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438768560704:android:8336d02e947d043557cda5",
+        "android_client_info": {
+          "package_name": "com.mibtech.aesthetic_am"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438768560704-3ba0vkgckiti33n4f498rls7mtop0n40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mibtech.aesthetic_am",
+            "certificate_hash": "860132462d4806708bdb56cecff438ec3619ac84"
+          }
+        },
+        {
+          "client_id": "438768560704-3nsgcvkdfsnfrfi97t8950590tdfgeji.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mibtech.aesthetic_am",
+            "certificate_hash": "5f59b38014515c389978b909db242eea72e1216d"
+          }
+        },
+        {
+          "client_id": "438768560704-51v3k64qih8bvn9tilbso5u9kvh5l9pd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mibtech.aesthetic_am",
+            "certificate_hash": "e01a49472da692c333a136fd981dc032bb751dad"
+          }
+        },
+        {
+          "client_id": "438768560704-fohmd8or926r43n9eqgkoo13csj8127i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQvmtno8asBK1buhS-78KcIcUz1PSxMqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438768560704-fohmd8or926r43n9eqgkoo13csj8127i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

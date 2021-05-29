@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:paddingTop="@dimen/_25sdp"
+    app:contentInsetStartWithNavigation="0dp"
+    app:menu="@menu/main_menu"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:titleTextColor="@color/colorPrimary"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewHamburger"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_alignParentStart="true"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_menu" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="@string/hi_user"
+            android:maxLines="1"
+            android:layout_toEndOf="@+id/cardViewHamburger"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/title_txt_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

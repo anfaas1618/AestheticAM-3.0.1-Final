@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/mShimmerViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:shimmer_duration="1200">
+
+        <!-- Adding rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/simmer_product_list" />
+
+            <include layout="@layout/simmer_product_list" />
+
+            <include layout="@layout/simmer_product_list" />
+
+            <include layout="@layout/simmer_product_list" />
+
+            <include layout="@layout/simmer_product_list" />
+
+            <include layout="@layout/simmer_product_list" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/tvAlert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_is_favorite"
+            app:tint="@color/gray" />
+
+        <TextView
+            android:id="@+id/alertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/no_wish_list_found"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alertSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alertTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/you_have_no_wish_list_items_yet"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alertSubTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="@string/tap_the_heart_shape_of_items_to_add_one"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dimen_15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

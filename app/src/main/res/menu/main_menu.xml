@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_search"
+        android:icon="@drawable/ic_search_"
+        android:title="@string/search"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/toolbar_sort"
+        android:icon="@drawable/ic_sort_"
+        android:title="@string/filterby"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/toolbar_cart"
+        android:icon="@drawable/ic_cart_"
+        android:title="@string/title_cart"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/toolbar_logout"
+        android:icon="@drawable/ic_logout_"
+        android:title="@string/logout"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+</menu>

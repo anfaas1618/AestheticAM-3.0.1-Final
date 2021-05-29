@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eCart.iml" filepath="$PROJECT_DIR$/.idea/modules/eCart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/eCart.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/eCart.app.iml" />
+    </modules>
+  </component>
+</project>

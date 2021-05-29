@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLyt"
+    android:layout_width="@dimen/dimen_60dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/dimen_15dp">
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Thu"
+        android:textColor="@color/txt_color"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDay"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="29"
+        android:textColor="@color/txt_color"
+        android:textFontWeight="100"
+        android:textSize="@dimen/dimen_17sp"
+        android:textStyle="bold"
+        tools:targetApi="p" />
+
+    <TextView
+        android:id="@+id/tvMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/open_sans"
+        android:text="Jan"
+        android:textColor="@color/txt_color"
+        android:textSize="12dp" />
+
+</RelativeLayout>

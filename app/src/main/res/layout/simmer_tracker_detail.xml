@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/_relativeLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <LinearLayout
+            android:id="@+id/_lytotp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/background" />
+
+            <View
+                android:id="@+id/_txtorderotp"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/_lytoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_lytotp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/background" />
+
+            <View
+                android:id="@+id/_txtorderid"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/_lytodate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_lytoid"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/background" />
+
+            <View
+                android:id="@+id/_txtorderdate"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/background" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@+id/_lytodate"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color" />
+
+        <View
+            android:id="@+id/_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_below="@+id/_line1"
+            android:background="@color/background" />
+
+
+        <View
+            android:id="@+id/_line2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/_recyclerView"
+            android:layout_marginTop="10dp"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:id="@+id/_lytotherdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/_line2"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/_lytPriceDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@color/background" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/_lytDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/_lytPromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/_lytWallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/background" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/background" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/background" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/background" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

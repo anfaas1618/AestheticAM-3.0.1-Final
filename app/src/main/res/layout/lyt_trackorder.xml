@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/dimen_10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="@dimen/dimen_5dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:textColor="@color/status_text"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtorderid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtorderid"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalItems"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:maxLines="1"
+        android:textColor="@color/gray" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_below="@id/tvItems"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/lightest_gray" />
+
+    <TextView
+        android:id="@+id/txtorderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textColor="@color/gray" />
+
+
+    <TextView
+        android:id="@+id/txtorderamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtorderdate"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:textColor="@color/txt_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/carddetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/view_detail"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

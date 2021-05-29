@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lytMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shadow"
+    android:padding="@dimen/_5sdp">
+
+
+    <TextView
+        android:id="@+id/txtstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/logout"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgproduct"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_below="@+id/txtstatus"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" />
+
+
+    <TextView
+        android:id="@+id/txtproductname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtstatus"
+        android:layout_toEndOf="@+id/imgproduct"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/lytprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtproductname"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/imgproduct"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtmeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtoriginalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:paddingEnd="@dimen/dimen_5dp"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytqty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytprice"
+        android:layout_toEndOf="@+id/imgproduct"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qty_1"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnminusqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="OnBtnClick"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:text="@string/x"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/black" />
+
+
+        <ImageButton
+            android:id="@+id/btnaddqty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="OnBtnClick"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_add" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txttotalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytqty"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+</RelativeLayout>
+

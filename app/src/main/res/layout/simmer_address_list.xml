@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_1dp"
+    android:background="@drawable/card_shadow"
+    android:orientation="horizontal"
+    android:padding="@dimen/_15sdp">
+
+    <View
+        android:id="@+id/imgSelect"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="top"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/ic_uncheck_circle"
+        android:backgroundTint="@color/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/tvName"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/background" />
+
+            <View
+                android:id="@+id/tvAddressType"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@id/tvName"
+                android:background="@drawable/right_btn_bg"
+                android:backgroundTint="@color/background"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingEnd="@dimen/dimen_10dp" />
+
+            <View
+                android:id="@+id/tvDefaultAddress"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@id/tvAddressType"
+                android:background="@drawable/right_btn_bg"
+                android:backgroundTint="@color/background"
+                android:paddingStart="@dimen/dimen_10dp"
+                android:paddingEnd="@dimen/dimen_10dp" />
+
+            <View
+                android:id="@+id/imgEdit"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/dimen_5dp"
+                android:layout_toStartOf="@id/imgDelete"
+                android:background="@drawable/ic_edit"
+                android:backgroundTint="@color/background" />
+
+            <View
+                android:id="@+id/imgDelete"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_delete1"
+                android:backgroundTint="@color/background" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/dimen_7dp"
+            android:background="@color/background" />
+
+        <View
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_7dp"
+            android:background="@color/background" />
+
+    </LinearLayout>
+</LinearLayout>
